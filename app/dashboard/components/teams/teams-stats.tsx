@@ -12,6 +12,7 @@ import rl from '@/public/images/rl.jpg'
 import { TooltipProvider } from '@radix-ui/react-tooltip'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 import TeamDistributionChart from './team-distribution-chart'
+import SupportTicketsResolved from './support-tickets-resolved'
 
 const teamLeaders = [
     {
@@ -111,7 +112,7 @@ export default function TeamsStats() {
                     <PieChartIcon className='' />
                 </CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className='pb-0'>
                 <TeamDistributionChart />
             </CardContent>
         </Card>
@@ -124,7 +125,7 @@ export default function TeamsStats() {
             </CardTitle>
         </CardHeader>
         <CardContent className='pl-0'>
-            line graph
+            <SupportTicketsResolved />
         </CardContent>
     </Card>
     </>

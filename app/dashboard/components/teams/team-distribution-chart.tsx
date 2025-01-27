@@ -10,17 +10,17 @@ export default function TeamDistributionChart() {
         {
           name: "Delta",
           value: 55,
-          color: "#84cc16",
+          color: "#f50057",
         },
         {
           name: "Alpha",
           value: 34,
-          color: "#3b82f6",
+          color: "#ec407a",
         },
         {
           name: "Canary",
           value: 11,
-          color: "#f97316",
+          color: "#f8bbd0",
         },
       ];
   return <ResponsiveContainer width="100%" height={150}>

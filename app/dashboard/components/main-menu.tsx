@@ -4,6 +4,7 @@ import MenuItem from './menu-item'
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import Link from 'next/link'
 import { LightDarkToggle } from '@/components/ui/light-dark-toggle'
+import { LayoutDashboardIcon } from 'lucide-react'
 
 export default function MainMenu() {
   return (
@@ -12,7 +13,10 @@ export default function MainMenu() {
             <MenuTitle />
         </header>
         <ul className='py-4 grow'>
-            <MenuItem href='/dashboard'>My Dashboard</MenuItem>
+            <div className='mb-2'>
+            <span className='text-muted-foreground text-sm mb-10'>Menu</span>
+            </div>
+            <MenuItem href='/dashboard'><LayoutDashboardIcon /> My Dashboard</MenuItem>
             <MenuItem href='/dashboard/teams'>Teams</MenuItem>
             <MenuItem href='/dashboard/employees'>Employees</MenuItem>
             <MenuItem href='/dashboard/account'>Account</MenuItem>
